@@ -4,8 +4,8 @@ import growingChart from "../../images/growingChart.svg";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import horizonLine from "../../images/horizonLine.svg";
 // import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-import {CgArrowLeftR} from "react-icons/cg"
-import {CgArrowRightR} from "react-icons/cg"
+import { CgArrowLeftR } from "react-icons/cg";
+import { CgArrowRightR } from "react-icons/cg";
 const Chart = (props) => {
   return (
     <div className="row mt-5 px-3">
@@ -19,10 +19,10 @@ const Chart = (props) => {
               <input type="text" placeholder="1 Jan - 1 Jun"></input>
               <div className="d-flex ">
                 <div>
-                <CgArrowLeftR  className="btn-dropdown"/>
+                  <CgArrowLeftR className="btn-dropdown" />
                 </div>
                 <div>
-                <CgArrowRightR   className="btn-dropdown"/>
+                  <CgArrowRightR className="btn-dropdown" />
                 </div>
               </div>
             </div>
@@ -69,11 +69,11 @@ const Chart = (props) => {
         <div className=" bg-white p-4  col-md-20  shadow-sm  rounded">
           <p>Orders</p>
           <div
-            class="progress"
+            className="progress"
             style={{ height: "5px", backgroundColor: "#FDC203" }}
           >
             <div
-              class="progress-bar"
+              className="progress-bar"
               role="progressbar"
               aria-valuenow="70"
               aria-valuemin="0"
@@ -84,7 +84,7 @@ const Chart = (props) => {
                 backgroundColor: "#27AE60",
               }}
             >
-              <span class="sr-only">70% Complete</span>
+              <span className="sr-only">70% Complete</span>
             </div>
           </div>
 
@@ -104,11 +104,11 @@ const Chart = (props) => {
         <div className=" bg-white p-4  col-md-20  shadow-sm  rounded">
           <p>Payments</p>
           <div
-            class="progress"
+            className="progress"
             style={{ height: "5px", backgroundColor: "#FDC203" }}
           >
             <div
-              class="progress-bar"
+              className="progress-bar"
               role="progressbar"
               aria-valuenow="70"
               aria-valuemin="0"
@@ -119,7 +119,7 @@ const Chart = (props) => {
                 backgroundColor: "#27AE60",
               }}
             >
-              <span class="sr-only">70% Complete</span>
+              <span className="sr-only">70% Complete</span>
             </div>
           </div>
 

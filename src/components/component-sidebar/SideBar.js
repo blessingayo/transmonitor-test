@@ -10,13 +10,18 @@ import {
   CDBSidebarMenuItem,
   CDBIcon,
 } from "cdbreact";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div>
       <div
-        style={{ display: "flex", height: "100vh", position: "fixed", overflow: "scroll initial" }}
+        style={{
+          display: "flex",
+          height: "100vh",
+          overflow: "scroll initial",
+          bottom: 0,
+        }}
       >
         <CDBSidebar textColor="#333" backgroundColor="#fff">
           <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
@@ -31,24 +36,16 @@ const Sidebar = () => {
 
           <CDBSidebarContent className="sidebar-content">
             <CDBSidebarMenu className="menu-bar">
-              <NavLink exact="true" to="/" activeclassname="activeClicked">
+              <Link exact="true" to="/" activeclassname="activeClicked">
                 <CDBSidebarHeader icon="">Main</CDBSidebarHeader>
-              </NavLink>
-              <NavLink
-                exact="true"
-                to="/tables"
-                activeclassname="activeClicked"
-              >
+              </Link>
+              <Link exact="true" to="/tables" activeclassname="activeClicked">
                 <CDBSidebarMenuItem icon="table">Overview</CDBSidebarMenuItem>
-              </NavLink>
-              <NavLink
-                exact="true"
-                to="/profile"
-                activeclassname="activeClicked"
-              >
+              </Link>
+              <Link exact="true" to="/profile" activeclassname="activeClicked">
                 <CDBSidebarHeader>Payments</CDBSidebarHeader>
-              </NavLink>
-              <NavLink
+              </Link>
+              <Link
                 exact="true"
                 to="/analytics"
                 activeclassname="activeClicked"
@@ -56,91 +53,89 @@ const Sidebar = () => {
                 <CDBSidebarMenuItem icon="wallet">
                   All Payments
                 </CDBSidebarMenuItem>
-              </NavLink>
+              </Link>
 
-              <NavLink
+              <Link
                 exact="true"
                 to="/hero404"
                 target="_blank"
                 activeclassname="activeClicked"
               >
                 <CDBSidebarMenuItem icon="exclamation-circle">
-                  {/* <span class="material-symbols-outlined">credit_score</span> */}
+                  {/* <span className="material-symbols-outlined">credit_score</span> */}
                   Reconcile Payments
                 </CDBSidebarMenuItem>
-              </NavLink>
+              </Link>
 
-              <NavLink
+              <Link
                 exact="true"
                 to="/hero404"
                 target="_blank"
                 activeclassname="activeClicked"
               >
                 <CDBSidebarMenuItem icon="exclamation-circle">
-                  {/* <span class="material-symbols-outlined">credit_score</span> */}
+                  {/* <span className="material-symbols-outlined">credit_score</span> */}
                   Un - Reconcile Payments
                 </CDBSidebarMenuItem>
-              </NavLink>
+              </Link>
 
-              <NavLink
+              <Link
                 exact="true"
                 to="/hero404"
                 target="_blank"
                 activeclassname="activeClicked"
               >
                 <CDBSidebarMenuItem icon="circle-dot">
-                  {/* <span class="material-symbols-outlined">credit_score</span> */}
+                  {/* <span className="material-symbols-outlined">credit_score</span> */}
                   Manual Settlement
                 </CDBSidebarMenuItem>
-              </NavLink>
+              </Link>
 
               <CDBSidebarHeader>Orders</CDBSidebarHeader>
-              <NavLink
+              <Link
                 exact="true"
                 to="/hero404"
                 target="_blank"
                 activeclassname="activeClicked"
               >
                 <CDBSidebarMenuItem icon="circle-dot">
-                  {/* <span class="material-symbols-outlined">credit_score</span> */}
-                All Orders
+                  {/* <span className="material-symbols-outlined">credit_score</span> */}
+                  All Orders
                 </CDBSidebarMenuItem>
-              </NavLink>
+              </Link>
 
-              <NavLink
+              <Link
                 exact="true"
                 to="/hero404"
                 target="_blank"
                 activeclassname="activeClicked"
               >
                 <CDBSidebarMenuItem icon="circle-dot">
-                  {/* <span class="material-symbols-outlined">credit_score</span> */}
-                Pending Orders
+                  {/* <span className="material-symbols-outlined">credit_score</span> */}
+                  Pending Orders
                 </CDBSidebarMenuItem>
-              </NavLink>
+              </Link>
 
-              <NavLink
+              <Link
                 exact="true"
                 to="/hero404"
                 target="_blank"
                 activeclassname="activeClicked"
               >
                 <CDBSidebarMenuItem icon="circle-dot">
-                  {/* <span class="material-symbols-outlined">credit_score</span> */}
-                Reconcile Orders
+                  {/* <span className="material-symbols-outlined">credit_score</span> */}
+                  Reconcile Orders
                 </CDBSidebarMenuItem>
-              </NavLink>
+              </Link>
 
               <CDBSidebarMenuItem icon="circle-dot">
-                  {/* <span class="material-symbols-outlined">credit_score</span> */}
+                {/* <span className="material-symbols-outlined">credit_score</span> */}
                 Merchant Profile
-                </CDBSidebarMenuItem>
+              </CDBSidebarMenuItem>
             </CDBSidebarMenu>
           </CDBSidebarContent>
 
           <CDBSidebarFooter style={{ textAlign: "center" }}>
-
-            
             <div
               style={{
                 padding: "20px 5px",
@@ -151,7 +146,6 @@ const Sidebar = () => {
           </CDBSidebarFooter>
         </CDBSidebar>
       </div>
-
     </div>
   );
 };
