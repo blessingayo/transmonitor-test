@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&family=Montserrat&family=Roboto:wght@300&display=swap");
+
+.search-space {
+  border: none;
+  border-bottom: 1px solid grey;
+  padding: 10px 60px;
+  font-family: "Roboto";
+}
+
+.search-con {
+  position: relative;
+  /* font-family: "Roboto"; */
+  margin-bottom: 10px;
+}
+
+.second-con select {
+  padding: 5px 0px 0px 5px;
+}
+
+.search-contain {
+  position: absolute;
+  top: 15px;
+  margin-left: 30px;
+  /* font-family: "Roboto"; */
+}
+
+.first-con {
+  font-family: "Roboto";
+}
+
+.second-con {
+  font-family: "Roboto";
+}
+
+.third-con {
+  font-family: "Roboto";
+}
+
+.table-header {
+  background-color: #eaeef0;
+  border-bottom: 2px solid #eaeef0;
+  width: 100vw;
+}
+
+.table-content {
+  font-size: 14px;
+  font-weight: bold;
+
+}
+
+.table-button-reconciled {
+  height: 33px;
+  width: 120px;
+  /* left: 1147px;
+    top: 803px; */
+  border-radius: 30px;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: bold;
+  color: #27ae60;
+  border: 1px solid #cccfd4;
+}
+
+.table-button-pending {
+  height: 33px;
+  width: 120px;
+  /* left: 1147px;
+    top: 803px; */
+  border-radius: 30px;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: bold;
+  color: #ebc315;
+  border: 1px solid #cccfd4;
+}
+
+
+.table-button-unreconciled {
+    height: 33px;
+    width: 120px;
+    /* left: 1147px;
+      top: 803px; */
+    border-radius: 30px;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: bold;
+    color:  #7F8FA4;
+    border: 1px solid #cccfd4;
+  }
+  
+
+  .btn-dropdown{
+    height: 26px;
+width: 26.966215133666992px;
+left: 1326px;
+top: 730px;
+border-radius: 0px;
+  }
+
+  .table-image{
+      width: 30px;
+  }

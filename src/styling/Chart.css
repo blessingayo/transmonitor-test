@@ -1,0 +1,40 @@
+.horizontal{
+    height: 20rem;
+    width: 2px;
+    background-color: #CFE8FB;
+
+    position: relative;
+    left: 55px;
+    bottom: 30px;
+}
+
+
+.progress-box{
+    width: 30%;
+}
+.growing-chart{
+    width: 100%;
+    margin-top: -250px;
+}
+
+.twenty-orders{
+    color: #FDC203;
+    font-weight: bold;
+}
+
+.eighty-orders{
+    color:#27AE60;
+    font-weight: bold;
+}
+
+.hundred-orders{
+    color: #1875F0;
+    font-weight: bold;
+
+}
+
+
+/* 
+.date{
+    margin-left: -14px;
+} */

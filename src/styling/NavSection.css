@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&family=Montserrat&family=Roboto:wght@300&display=swap");
+
+.nav-control {
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  align-items: center;
+}
+
+.transmonitor-header {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 900;
+  /* line-height: 28px; */
+}
+
+.nav-contain {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-contain {
+  margin-right: 15px;
+  /* height: 12px;
+    width: 12px; */
+  opacity: 0.4;
+}
+
+.search-form {
+  border: none;
+}
+
+.search-form::placeholder {
+  opacity: 0.4;
+}
+
+.list-contain {
+  font-family: "Roboto";
+  display: flex;
+}
+
+.list-contain ul {
+  display: flex;
+  margin-left: 20px;
+  margin: 0;
+  align-items: center;
+}
+
+.list-contain a {
+  padding: 0 40px;
+}
+
+.list-contain a i {
+  margin-right: 100px;
+}
+
+.list-contain h6 {
+  align-items: center;
+}
+
+.username {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 20px;
+}
+
+.username h6 {
+  position: relative;
+  /* right: 61px; */
+}
+
+.username small {
+  font-size: 12px;
+}
+
+.notification-container {
+  position: relative;
+}
+
+.notification {
+  border-radius: 50%;
+  background-color: blue;
+  font-size: 9px;
+  padding: 2px 6px;
+  color: white;
+  font-weight: bolder;
+  position: absolute;
+  top: -3px;
+  right: -7px;
+}
