@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div>
+    <div style={{ position: "fixed" }}>
       <div
         style={{
           display: "flex",

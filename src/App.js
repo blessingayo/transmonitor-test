@@ -11,10 +11,10 @@ function App() {
     <Router>
       <div className="App">
         <NavSection />
-        <div className=" d-flex">
+        <div className="">
           <Sidebar />
 
-          <div className="container-fluid">
+          <div className="container-fluid" style={{ marginLeft: "70px" }}>
             <div className="row">
               <div className="col-12">
                 <Card />
