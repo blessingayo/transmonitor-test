@@ -22,10 +22,12 @@
   /* height: 12px;
     width: 12px; */
   opacity: 0.4;
+  position: absolute;
 }
 
 .search-form {
   border: none;
+  position: relative;
 }
 
 .search-form::placeholder {
